@@ -27,9 +27,9 @@ return(
             className="progress-bar"
             role="progressbar"
             aria-valuemin="0"
-            aria-valuemax={`${focusTime}`}
-            aria-valuenow={`${focusCount}`}// TODO: Increase aria-valuenow as elapsed time increases
-            style={{ width: `${((focusCount / focusTime) * 100)}%` }}  // TODO: Increase width % as elapsed time increases
+            aria-valuemax={`${focusTime/15}`}
+            aria-valuenow={`${focusCount/15}`}// TODO: Increase aria-valuenow as elapsed time increases
+            style={{ width: `${((focusCount / focusTime) * (100/15))}%` }}  // TODO: Increase width % as elapsed time increases
           />
         </div>
       </div>
@@ -59,9 +59,9 @@ return(
             className="progress-bar"
             role="progressbar"
             aria-valuemin="0"
-            aria-valuemax={`${breakTime}`}
-            aria-valuenow={`${breakCount}`}// TODO: Increase aria-valuenow as elapsed time increases
-            style={{ width: `${((breakCount / breakTime) * 100)}%` }}  // TODO: Increase width % as elapsed time increases
+            aria-valuemax={`${breakTime/3}`}
+            aria-valuenow={`${breakCount/3}`}// TODO: Increase aria-valuenow as elapsed time increases
+            style={{ width: `${((breakCount / breakTime) * (100/3))}%` }}  // TODO: Increase width % as elapsed time increases
           />
         </div>
       </div>
